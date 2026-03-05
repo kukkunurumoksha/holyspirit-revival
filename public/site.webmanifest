@@ -1,0 +1,16 @@
+{
+  "name": "100 Days of Holy Spirit Revival",
+  "short_name": "Revival",
+  "description": "A transformative spiritual journey of prayer, worship, and revival",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9b87f5",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
