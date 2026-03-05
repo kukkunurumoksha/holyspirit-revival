@@ -19,7 +19,7 @@ const Home = () => {
         imageSrc="/images/revival/church-hall/packed-family-crowd.jpg"
         imageAlt="Packed church hall with families during revival"
         title="100 Days of Holy Spirit Revival"
-        subtitle="What began as a single question on April 17, 2024 became a move of God that touched nations."
+        subtitle="What began as a single question on April 17, 2024 became 100 days of 24/7 nonstop worship, prayer, and revival that touched nations."
         overlay="gold"
         className=""
       >

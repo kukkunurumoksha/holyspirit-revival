@@ -6,7 +6,7 @@ export interface Stat {
 
 export const stats: Stat[] = [
   { value: 100, suffix: "+", label: "Days of Continuous Revival" },
+  { value: 24, suffix: "/7", label: "Nonstop Worship & Prayer" },
   { value: 25, suffix: "+", label: "Nations Represented" },
-  { value: 50, suffix: "+", label: "Countries via YouTube" },
   { value: 3, suffix: "M+", label: "People Touched Globally" },
 ];

@@ -83,8 +83,8 @@ const TheStory = () => {
         id="unfolding"
         title="III. The Unfolding (Days 2–25)"
         paragraphs={[
-          "From Day 2 onward, Pastor Finny Stephen continued the nightly ministry. What happened next was extraordinary — the revival grew organically. There was no advertising, no formal invitations. People simply came, drawn by something beyond human effort.",
-          "Youth began weeping at altars. Worship extended hours beyond scheduled times. The hunger was palpable — a generation crying out not for anything of this world, but to draw near to the Lord.",
+          "From Day 2 onward, Pastor Finny Stephen continued the nightly ministry. What happened next was extraordinary — the revival grew organically into 24/7 nonstop meetings. There was no advertising, no formal invitations. People simply came, drawn by something beyond human effort.",
+          "The meetings ran around the clock — worship, prayer, and ministry continued day and night without pause. Youth began weeping at altars. Services extended hours beyond scheduled times. The hunger was palpable — a generation crying out not for anything of this world, but to draw near to the Lord.",
         ]}
         imageSrc="/images/revival/church-hall/packed-standing-worship.jpg"
         imageAlt="Standing worship in packed church"
