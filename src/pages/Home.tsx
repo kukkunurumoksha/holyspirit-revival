@@ -36,7 +36,6 @@ const Home = () => {
       <TimelinePreview />
       <PastorsGrid />
 
-
       <ScriptureRibbon
         text={scriptures.john7.text}
         reference={scriptures.john7.reference}
