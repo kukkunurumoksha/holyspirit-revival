@@ -19,10 +19,13 @@ const Home = () => {
         imageSrc="/images/revival/church-hall/packed-family-crowd.jpg"
         imageAlt="Packed church hall with families during revival"
         title="100 Days of Holy Spirit Revival"
-        subtitle="What began as a single question on April 17, 2024 became 100 days of 24/7 nonstop worship, prayer, and revival that touched nations."
+        subtitle="What began as a single question on April 18, 2024 became 100 days of 24/7 nonstop worship, prayer, and revival that touched nations."
         overlay="gold"
         className=""
       >
+        <p className="rounded-full border border-white/30 bg-white/10 px-6 py-2 font-sans text-sm font-semibold tracking-wide text-white backdrop-blur-sm md:text-base">
+          April 18 – July 26, 2024 &bull; 100 Days of Holy Spirit Revival
+        </p>
         <Button asChild size="lg" className="bg-gold text-white hover:bg-gold-light">
           <Link to="/the-story">Read the Story</Link>
         </Button>

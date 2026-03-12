@@ -1,70 +1,65 @@
 export interface Milestone {
   date: string;
-  dayNumber?: number;
   title: string;
   description: string;
+  storyId?: string;
 }
 
 export const milestones: Milestone[] = [
   {
     date: "April 16, 2024",
-    title: "The Prophecy",
+    title: "Prophetic Confirmation",
     description:
-      "Pastor Tijo Thomas prophesies from Indonesia: 'There is going to be a great move in Karnataka.'",
-  },
-  {
-    date: "April 17, 2024",
-    dayNumber: 1,
-    title: "Day 1 — The Question",
-    description:
-      "A single question ignites a move of God at Hope in Jesus Apostolic Church of Christ, Electronic City.",
+      "Pastor T. Jijo Thomas prophesies a great revival in Karnataka, specifically in Electronic City, Bangalore.",
+    storyId: "prophecy",
   },
   {
     date: "April 18, 2024",
-    dayNumber: 2,
-    title: "The Foundational Message",
+    title: "The Beginning",
     description:
-      "Pastor Raison Thomas preaches from John 7:37 — 'If anyone is thirsty, let him come to Me and drink.'",
-  },
-  {
-    date: "Late April 2024",
-    dayNumber: 10,
-    title: "Organic Growth",
-    description:
-      "Word spreads without advertising. People arrive uninvited, drawn by the Spirit.",
-  },
-  {
-    date: "May 2024",
-    dayNumber: 25,
-    title: "National Attention",
-    description:
-      "The revival reaches a major milestone as national attention grows and thousands begin to gather.",
+      "Pastor Raison Thomas preaches from John 7:37 — 'If anyone is thirsty, let him come to Me and drink.' The Holy Spirit Revival begins.",
+    storyId: "beginning",
   },
   {
     date: "May 9–10, 2024",
-    title: "First Impartation Service",
+    title: "Leaders' Impartation",
     description:
-      "Over 2,000 attendees, including 500+ frontline ministers and worship leaders from Kerala.",
+      "Over 2,000 attendees including 500+ frontline ministers and worship leaders gather for impartation services.",
+    storyId: "impartation",
   },
   {
-    date: "June 2024",
-    dayNumber: 50,
-    title: "International Reach",
+    date: "July 1, 2024",
+    title: "75th Day — New Delhi",
     description:
-      "25+ nations represented physically. The revival crosses borders.",
+      "Mega impartation service in New Delhi. 2.5–2.8 million viewers reached through 75 days of unbroken livestream.",
+    storyId: "75th-day",
   },
   {
-    date: "July 2024",
-    dayNumber: 75,
-    title: "75 Days Unbroken Livestream",
+    date: "July 6, 2024",
+    title: "Indonesia",
     description:
-      "2.8 million+ YouTube views. Dr. John Joseph starts 75+ day Revival Nights in Trivandrum.",
+      "The revival fire spreads beyond India's borders to Indonesia, demonstrating a truly global move of the Holy Spirit.",
+    storyId: "indonesia",
   },
   {
-    date: "July 2024",
-    dayNumber: 100,
-    title: "Day 100 — The Fulfillment",
+    date: "July 26–28, 2024",
+    title: "100th Day — United Kingdom",
     description:
-      "20,000–25,000 physical attendees. 100 hours of nonstop prayer by Karnataka pastors. Zero conflicts in 100 days.",
+      "Special thanksgiving and celebration in the UK. 20,000–25,000 physical attendees over 100 days. Karnataka pastors complete 100 hours of nonstop prayer.",
+    storyId: "100th-day",
+  },
+  {
+    date: "August 2–4, 2024",
+    title: "Ireland",
+    description:
+      "The revival continues across Europe as the fire of the Holy Spirit reaches Ireland.",
+    storyId: "ireland",
+  },
+  {
+    date: "January 30, 2025",
+    title: "Uganda",
+    description:
+      "The revival expands to the African continent, spanning Asia, Europe, and Africa.",
+    storyId: "uganda",
   },
 ];

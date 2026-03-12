@@ -15,6 +15,7 @@ interface StorySectionProps {
   imageSrc?: string;
   imageAlt?: string;
   videoId?: string;
+  videoSrc?: string;
   dark?: boolean;
 }
 
@@ -26,6 +27,7 @@ export function StorySection({
   imageSrc,
   imageAlt,
   videoId,
+  videoSrc,
   dark,
 }: StorySectionProps) {
   return (
@@ -60,6 +62,18 @@ export function StorySection({
               allowFullScreen
               className="h-full w-full"
             />
+          </div>
+        )}
+
+        {videoSrc && (
+          <div className="mt-10 overflow-hidden rounded-lg shadow-warm-lg aspect-video">
+            <video
+              src={videoSrc}
+              controls
+              className="h-full w-full"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         )}
 
