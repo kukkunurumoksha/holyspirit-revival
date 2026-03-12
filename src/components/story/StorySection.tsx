@@ -7,6 +7,11 @@ interface StoryQuote {
   role?: string;
 }
 
+interface StoryImage {
+  src: string;
+  alt?: string;
+}
+
 interface StorySectionProps {
   id: string;
   title: string;
@@ -14,6 +19,7 @@ interface StorySectionProps {
   quotes?: StoryQuote[];
   imageSrc?: string;
   imageAlt?: string;
+  images?: StoryImage[];
   videoId?: string;
   videoSrc?: string;
   dark?: boolean;
@@ -26,6 +32,7 @@ export function StorySection({
   quotes,
   imageSrc,
   imageAlt,
+  images,
   videoId,
   videoSrc,
   dark,
@@ -84,6 +91,20 @@ export function StorySection({
               alt={imageAlt || "Revival photo"}
               className="w-full object-cover"
             />
+          </div>
+        )}
+
+        {images && images.length > 0 && (
+          <div className={cn("mt-10 grid gap-4", images.length === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2")}>
+            {images.map((img, i) => (
+              <div key={i} className="overflow-hidden rounded-lg shadow-warm-lg">
+                <img
+                  src={img.src}
+                  alt={img.alt || "Revival photo"}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            ))}
           </div>
         )}
 

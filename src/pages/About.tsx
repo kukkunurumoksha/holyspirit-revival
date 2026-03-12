@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div>
       <PhotoHero
-        imageSrc="/images/revival/church-hall/packed-full-hall.jpg"
+        imageSrc="/images/revival/church-hall/packed-full-hall.webp"
         imageAlt="Packed church hall"
         title="About Hope in Jesus Apostolic Church of Christ"
         subtitle="A community of believers passionate about the presence and power of the Holy Spirit"

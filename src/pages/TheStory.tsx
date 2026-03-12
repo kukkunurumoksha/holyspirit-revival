@@ -25,7 +25,7 @@ const TheStory = () => {
   return (
     <div>
       <PhotoHero
-        imageSrc="/images/revival/church-hall/packed-worship-01.jpg"
+        imageSrc="/images/revival/church-hall/packed-worship-01.webp"
         imageAlt="Packed church hall worship"
         title="The Story"
         subtitle="From Bangalore to the Nations"
@@ -63,13 +63,19 @@ const TheStory = () => {
 
       <StorySection
         id="beginning"
-        title="II. The Beginning — April 18, 2024"
+        title="II. The Beginning — 21-Day Fasting Prayer — April 18, 2024"
         dark
-        imageSrc="/images/revival/church-hall/packed-sermon-listening.jpg"
+        imageSrc="/images/revival/church-hall/packed-sermon-listening.webp"
         imageAlt="Congregation listening to sermon during revival"
+        images={[
+          { src: "/images/revival/church-hall/beginning-01.jpeg", alt: "Fasting prayer at Hope in Jesus Church" },
+          { src: "/images/revival/church-hall/beginning-02.jpeg", alt: "Worship during the 21-day fast" },
+          { src: "/images/revival/church-hall/beginning-03.jpeg", alt: "Congregation at the beginning of revival" },
+          { src: "/images/revival/church-hall/beginning-04.jpeg", alt: "Revival breaks out in Electronic City" },
+        ]}
         paragraphs={[
-          "During the 18th day of a 21-day fasting prayer at Hope in Jesus Church, Electronic City, Bangalore, Pastor Raison Thomas preached from John 7:37: 'If anyone is thirsty, let him come to me and drink.' This message asking 'Are you thirsty?' deeply impacted the congregation and changed the spiritual atmosphere.",
-          "Although only a small number of people were expected to attend, this message became the catalyst for a powerful revival movement. Worship and prayer continued beyond scheduled times, marking the beginning of the Holy Spirit Revival. From that day onward, worship, prayer, and ministry continued continuously—sometimes day and night for nearly 30 days without stopping.",
+          "The church in Electronic City, Bangalore was on its 18th day of a 21-day fasting prayer. During these penultimate days of sobriety at Hope in Jesus Church, Pastor Raison Thomas delivered a message from John 7:37. Just as Jesus did on the last and greatest day of the festival, the Pastor cried out: 'Let anyone who is thirsty come to Me and drink.' That single question — 'Are you thirsty?' — rapidly changed the entire spiritual atmosphere of the church.",
+          "The sessions prolonged beyond all timelines and schedules, with worship that never stopped. Although only a small number of people were expected to attend, this message became the catalyst for a powerful revival movement. From that day onward, worship, prayer, and ministry continued continuously — sometimes day and night for nearly 30 days without stopping.",
         ]}
         quotes={[
           {
@@ -90,8 +96,12 @@ const TheStory = () => {
       <StorySection
         id="impartation"
         title="III. Leaders' Impartation — May 9–10, 2024"
-        imageSrc="/images/revival/convention/large-venue-flags.jpg"
+        imageSrc="/images/revival/convention/large-venue-flags.webp"
         imageAlt="Speaker addressing packed crowd during impartation service"
+        images={[
+          { src: "/images/revival/convention/impartation-01.jpeg", alt: "Leaders' impartation service" },
+          { src: "/images/revival/convention/impartation-02.jpeg", alt: "Impartation gathering crowd" },
+        ]}
         paragraphs={[
           "As the revival grew and the number of attendees increased, a two-day leaders' meeting and impartation service was organized under the guidance of the Holy Spirit. More than 2,000 people attended this gathering, including around 1,000–2,000 pastors and believers from different places.",
           "What made this unique was the spontaneous nature of the gathering—no one was formally invited, yet thousands came from across India and beyond. Over 500 frontline ministers and worship leaders from Kerala alone participated. Many experienced prayer, prophetic ministry, and spiritual impartation. Attendees were individually blessed and prayed for by church leaders and ministers. During these meetings, many believers experienced inner healing, received spiritual gifts, and encountered the presence of God.",
@@ -115,8 +125,14 @@ const TheStory = () => {
         id="75th-day"
         title="IV. 75th Day — July 1, 2024 — New Delhi — Continuous Streaming & Expansion"
         dark
-        imageSrc="/images/revival/stage/holy-spirit-revival-stage-crowd.jpg"
+        imageSrc="/images/revival/stage/holy-spirit-revival-stage-crowd.webp"
         imageAlt="Worship with keyboard during packed revival service"
+        images={[
+          { src: "/images/revival/new-delhi/new-delhi-01.jpeg", alt: "Revival gathering in New Delhi" },
+          { src: "/images/revival/new-delhi/new-delhi-02.jpeg", alt: "Worship at New Delhi impartation service" },
+          { src: "/images/revival/new-delhi/new-delhi-03.jpeg", alt: "Crowds at New Delhi revival" },
+          { src: "/images/revival/new-delhi/new-delhi-04.jpeg", alt: "New Delhi 75th day celebration" },
+        ]}
         videoId="9BNYwXz9yRE"
         paragraphs={[
           "The revival meetings were live streamed continuously for 75 days without interruption, reaching around 2.5–2.8 million viewers worldwide. By this time, the revival had touched thousands of people physically and millions online. The revival grew organically into 24/7 nonstop meetings with no advertising or formal invitations—people simply came, drawn by something beyond human effort.",
@@ -136,6 +152,14 @@ const TheStory = () => {
         id="indonesia"
         title="V. Indonesia — July 6, 2024"
         dark
+        images={[
+          { src: "/images/revival/indonesia/indonesia-01.jpeg", alt: "Revival worship in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-02.jpeg", alt: "Believers gathered in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-03.jpeg", alt: "Indonesia revival meeting" },
+          { src: "/images/revival/indonesia/indonesia-04.jpeg", alt: "Prayer and worship in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-05.jpeg", alt: "Indonesia revival crowd" },
+          { src: "/images/revival/indonesia/indonesia-06.jpeg", alt: "Holy Spirit move in Indonesia" },
+        ]}
         paragraphs={[
           "Just days after the New Delhi gathering, the revival fire spread to Indonesia on July 6, 2024. The movement continued to expand beyond India's borders, demonstrating that this was truly a global move of the Holy Spirit.",
           "Believers in Indonesia experienced the same hunger for God and spiritual transformation that had marked the revival in Bangalore, as the fire continued to spread from nation to nation.",
@@ -150,6 +174,10 @@ const TheStory = () => {
       <StorySection
         id="100th-day"
         title="VI. 100th Day — July 26-28, 2024 — United Kingdom — Celebration & Thanksgiving"
+        images={[
+          { src: "/images/revival/uk/uk-01.jpeg", alt: "100th day celebration in the United Kingdom" },
+          { src: "/images/revival/uk/uk-02.jpeg", alt: "Revival thanksgiving gathering in the UK" },
+        ]}
         paragraphs={[
           "After 100 days of revival meetings, a special thanksgiving and celebration was held in the United Kingdom. It is estimated that 20,000–25,000 people attended in person over the 100 days in Bangalore, while millions around the world watched through live streaming and social media. Testimonies of healing, deliverance, salvation, and life transformation were shared.",
           "In the final stretch, Karnataka pastors gathered for 100 hours of nonstop prayer. Across the entire 100 days, there were zero conflicts or misunderstandings among pastors—an extraordinary testimony to the unity the Spirit brought. Pastor Damien Antony identified three phases of what God was doing: Restoration, In-gathering, and Missions—a movement that was only beginning. Leaders emphasized that this revival is only the beginning of a greater move of God in India and around the world.",
@@ -168,6 +196,10 @@ const TheStory = () => {
         id="ireland"
         title="VII. Ireland — August 2-4, 2024"
         dark
+        images={[
+          { src: "/images/revival/ireland/ireland-01.jpeg", alt: "Revival gathering in Ireland" },
+          { src: "/images/revival/ireland/ireland-02.jpeg", alt: "Worship and prayer in Ireland" },
+        ]}
         paragraphs={[
           "Following the powerful 100th day celebration in the UK, the revival continued to Ireland from August 2-4, 2024. The fire of the Holy Spirit that began in Electronic City, Bangalore was now burning across Europe, touching hearts and transforming lives.",
           "The Irish gatherings continued the pattern of worship, prayer, and spiritual impartation that had characterized the revival from its beginning, as believers from across the region gathered to experience the presence of God.",
@@ -177,6 +209,9 @@ const TheStory = () => {
       <StorySection
         id="uganda"
         title="VIII. Uganda — January 30, 2025"
+        images={[
+          { src: "/images/revival/uganda/uganda-01.jpeg", alt: "Revival in Uganda" },
+        ]}
         paragraphs={[
           "The revival fire continues to spread to Africa, with a planned gathering in Uganda on January 30, 2025. This marks the expansion of the Holy Spirit Revival to the African continent, demonstrating that the movement truly spans the globe.",
           "From Asia to Europe to Africa and North America, the revival that began with a simple question—'Are you thirsty?'—has become a worldwide call to spiritual awakening and renewal, fulfilling the prophetic word that this fire will not stop until the Lord returns.",

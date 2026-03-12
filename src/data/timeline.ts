@@ -15,9 +15,9 @@ export const milestones: Milestone[] = [
   },
   {
     date: "April 18, 2024",
-    title: "The Beginning",
+    title: "The Beginning — 21-Day Fasting Prayer",
     description:
-      "Pastor Raison Thomas preaches from John 7:37 — 'If anyone is thirsty, let him come to Me and drink.' The Holy Spirit Revival begins.",
+      "On the 18th day of a 21-day fasting prayer at Hope in Jesus Church, Pastor Raison Thomas cries out from John 7:37 — 'Let anyone who is thirsty come to Me and drink.' That single question ignites the Holy Spirit Revival.",
     storyId: "beginning",
   },
   {

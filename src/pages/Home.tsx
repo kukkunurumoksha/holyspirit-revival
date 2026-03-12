@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { PhotoHero, ScriptureRibbon } from "@/components/revival";
+import { PhotoHero, ScriptureRibbon, SectionHeader } from "@/components/revival";
 import { StatsBar } from "@/components/home/StatsBar";
 import { TestimonyCarousel } from "@/components/home/TestimonyCarousel";
 import { TimelinePreview } from "@/components/home/TimelinePreview";
@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       <PhotoHero
-        imageSrc="/images/revival/church-hall/packed-family-crowd.jpg"
+        imageSrc="/images/revival/church-hall/packed-family-crowd.webp"
         imageAlt="Packed church hall with families during revival"
         title="100 Days of Holy Spirit Revival"
         subtitle="What began as a single question on April 18, 2024 became 100 days of 24/7 nonstop worship, prayer, and revival that touched nations."
@@ -30,6 +30,45 @@ const Home = () => {
           <Link to="/the-story">Read the Story</Link>
         </Button>
       </PhotoHero>
+
+      {/* How It Started */}
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-4xl px-6">
+          <SectionHeader
+            title="How the Revival Started"
+            subtitle="From a 21-day fast to a move of God that shook the nations"
+          />
+          <div className="space-y-6 font-sans text-body leading-relaxed text-muted-foreground">
+            <p>
+              In April 2024, the church in Electronic City, Bangalore was on its 18th day of a
+              21-day period of fasting and prayer. During these penultimate days of sobriety at Hope
+              in Jesus Church, Pastor Raison Thomas delivered a message from the word of God. Just
+              as Jesus did on the last and greatest day of the festival, the Pastor cried out from{" "}
+              <strong className="text-foreground">John 7:37</strong>:
+            </p>
+            <blockquote className="border-l-4 border-gold pl-6 py-2 font-serif text-lg italic text-foreground md:text-xl">
+              "Let anyone who is thirsty come to Me and drink."
+            </blockquote>
+            <p>
+              That single question — <em>"Are you thirsty?"</em> — rapidly changed the entire
+              spiritual atmosphere. The sessions prolonged beyond all timelines and schedules, with
+              worship that never stopped. Pastors sensed a cloud "the size of a man's fist" for the
+              torrent on the way.
+            </p>
+            <p>
+              This paved the way for the ongoing Holy Spirit Revival that has touched thousands of
+              people in person and over 2.5 million people online worldwide. The revival started to
+              spread like fire — with pastors from different states across India and other parts of
+              the world arriving to experience the tangible presence of the Holy Spirit.
+            </p>
+          </div>
+          <div className="mt-10 text-center">
+            <Button asChild variant="outline" size="lg">
+              <Link to="/the-story">Read the Full Story</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <StatsBar />
       <TestimonyCarousel />

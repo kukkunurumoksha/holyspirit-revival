@@ -13,7 +13,7 @@ const Pastors = () => {
   return (
     <div>
       <PhotoHero
-        imageSrc="/images/revival/convention/large-venue-crowd-worship.jpg"
+        imageSrc="/images/revival/convention/large-venue-crowd-worship.webp"
         imageAlt="Worship at large venue"
         title="Pastors & Ministers"
         subtitle="United in one Spirit, one vision"

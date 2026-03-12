@@ -17,7 +17,7 @@ export const pastors: Pastor[] = [
     role: "Host Pastor",
     church: "Hope in Jesus Apostolic Church of Christ (HIJBLR)",
     bio: "42 years old, pastor's son. 10 years of longing for revival, 4 years of daily prayer in Bangalore. Expected revival by 2027 but God moved in 2024.",
-    imageSrc: "/images/revival/pastors/pastor-anish-mano-stephen.png",
+    imageSrc: "/images/revival/pastors/pastor-anish-mano-stephen.webp",
     initials: "AS",
     quotes: [
       "That one single question became the beginning of a Holy Spirit Revival that impacted India, and from India, people in many nations of the world.",
@@ -30,7 +30,7 @@ export const pastors: Pastor[] = [
     role: "Foundational Message",
     church: "In Christ Church",
     bio: "Delivered the foundational message on April 18 from John 7:37.",
-    imageSrc: "/images/revival/pastors/pastor-portrait-01.jpg",
+    imageSrc: "/images/revival/pastors/pastor-portrait-01.webp",
     initials: "RT",
     quotes: [
       "Your thirst is the reason for everything in revival. God cannot do anything through people who do not have thirst.",
@@ -43,7 +43,7 @@ export const pastors: Pastor[] = [
     name: "Pastor Finny Stephen",
     role: "Continued Ministry from Day 2",
     bio: "Led nightly ministry from Day 2 onward, witnessing the organic growth of the revival.",
-    imageSrc: "/images/revival/pastors/pastor-portrait-03.jpg",
+    imageSrc: "/images/revival/pastors/pastor-portrait-03.webp",
     initials: "FS",
     quotes: [
       "Bangalore is going to become a hub of revival for India. What we are seeing now is only a beginning — just a small sign.",
@@ -55,7 +55,7 @@ export const pastors: Pastor[] = [
     name: "Pastor Rajesh Elappara",
     role: "Witnessed Youth Hunger",
     bio: "Witnessed the younger generation's deep hunger for God during the revival.",
-    imageSrc: "/images/revival/pastors/pastor-portrait-02.jpg",
+    imageSrc: "/images/revival/pastors/pastor-portrait-02.webp",
     initials: "RE",
     quotes: [
       "God is training an army there for the greatest revival that is yet to come in India.",
@@ -68,7 +68,7 @@ export const pastors: Pastor[] = [
     name: "Dr. John Joseph",
     role: "Dubai / Trivandrum Ministry",
     bio: "Based in Dubai and Trivandrum. Family drawn to revival. Started 75+ day Revival Nights in Trivandrum after impartation service.",
-    imageSrc: "/images/revival/pastors/pastor-john-joseph.png",
+    imageSrc: "/images/revival/pastors/pastor-john-joseph.webp",
     initials: "JJ",
     quotes: [
       "Let the latter glory be greater than the former. The best is yet to come.",
@@ -80,7 +80,7 @@ export const pastors: Pastor[] = [
     name: "Pastor Tijo Thomas",
     role: "Prophetic Ministry",
     bio: "Was in Indonesia during the revival. Prophesied on April 16 about a great move in Karnataka.",
-    imageSrc: "/images/revival/pastors/pastor-tijo-thomas.png",
+    imageSrc: "/images/revival/pastors/pastor-tijo-thomas.webp",
     initials: "TT",
     quotes: [
       "There is going to be a big revival. The Spirit of the Lord says there is going to be a great move in Karnataka. There is going to be a glory encounter in Electronic City.",
