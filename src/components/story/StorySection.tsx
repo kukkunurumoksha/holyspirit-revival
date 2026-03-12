@@ -16,6 +16,7 @@ interface StorySectionProps {
   imageAlt?: string;
   videoId?: string;
   videoSrc?: string;
+  videoPoster?: string;
   dark?: boolean;
 }
 
@@ -28,6 +29,7 @@ export function StorySection({
   imageAlt,
   videoId,
   videoSrc,
+  videoPoster,
   dark,
 }: StorySectionProps) {
   return (
@@ -69,8 +71,10 @@ export function StorySection({
           <div className="mt-10 overflow-hidden rounded-lg shadow-warm-lg aspect-video">
             <video
               src={videoSrc}
+              poster={videoPoster}
               controls
-              className="h-full w-full"
+              className="h-full w-full object-cover"
+              style={{ borderRadius: "12px" }}
             >
               Your browser does not support the video tag.
             </video>

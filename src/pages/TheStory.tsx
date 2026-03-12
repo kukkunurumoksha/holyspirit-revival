@@ -42,6 +42,7 @@ const TheStory = () => {
           "This prophetic word set the stage for what was about to unfold—a sovereign move of the Holy Spirit that would touch India and the nations.",
         ]}
         videoSrc="/videos/prophecy.mp4"
+        videoPoster="/images/revival/Thumbail/Prophecy_Thumbnail.png"
         quotes={[
           {
             quote:
