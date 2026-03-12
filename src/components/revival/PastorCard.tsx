@@ -33,6 +33,7 @@ export function PastorCard({
           <img
             src={imageSrc}
             alt={name}
+            loading="lazy"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (

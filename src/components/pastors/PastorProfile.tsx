@@ -40,6 +40,7 @@ export function PastorProfile({
               <img
                 src={pastor.imageSrc}
                 alt={pastor.name}
+                loading="lazy"
                 className="h-full w-full object-cover"
               />
             </div>

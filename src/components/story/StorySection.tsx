@@ -65,6 +65,7 @@ export function StorySection({
             <iframe
               src={`https://www.youtube.com/embed/${videoId}`}
               title="Revival highlights"
+              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="h-full w-full"
@@ -89,6 +90,7 @@ export function StorySection({
             <img
               src={imageSrc}
               alt={imageAlt || "Revival photo"}
+              loading="lazy"
               className="w-full object-cover"
             />
           </div>
@@ -101,6 +103,7 @@ export function StorySection({
                 <img
                   src={img.src}
                   alt={img.alt || "Revival photo"}
+                  loading="lazy"
                   className="h-full w-full object-cover"
                 />
               </div>
