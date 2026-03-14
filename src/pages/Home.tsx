@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { PhotoHero, ScriptureRibbon, SectionHeader } from "@/components/revival";
+import { InteractiveHero, ScriptureRibbon, SectionHeader } from "@/components/revival";
 import { StatsBar } from "@/components/home/StatsBar";
 import { TestimonyCarousel } from "@/components/home/TestimonyCarousel";
 import { TimelinePreview } from "@/components/home/TimelinePreview";
@@ -15,13 +15,12 @@ const Home = () => {
 
   return (
     <div>
-      <PhotoHero
+      <InteractiveHero
         imageSrc="/images/revival/church-hall/packed-family-crowd.webp"
         imageAlt="Packed church hall with families during revival"
         title="100 Days of Holy Spirit Revival"
         subtitle="What began as a single question on April 18, 2024 became 100 days of 24/7 nonstop worship, prayer, and revival that touched nations."
         overlay="gold"
-        className=""
       >
         <p className="rounded-full border border-white/30 bg-white/10 px-6 py-2 font-sans text-sm font-semibold tracking-wide text-white backdrop-blur-sm md:text-base">
           April 18 – July 26, 2024 &bull; 100 Days of Holy Spirit Revival
@@ -29,7 +28,7 @@ const Home = () => {
         <Button asChild size="lg" className="bg-gold text-white hover:bg-gold-light">
           <Link to="/the-story">Read the Story</Link>
         </Button>
-      </PhotoHero>
+      </InteractiveHero>
 
       {/* How It Started */}
       <section className="py-16 md:py-24">
