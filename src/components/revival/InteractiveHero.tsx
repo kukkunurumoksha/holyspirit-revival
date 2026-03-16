@@ -54,15 +54,22 @@ export function InteractiveHero({
     []
   );
 
-  // Calculate image display dimensions:
-  // The image fills the viewport HEIGHT, and width scales naturally.
-  // On mobile (portrait), this makes the image much wider than the screen → pannable.
-  // On desktop (landscape), the image width may be close to or wider than the viewport.
-  const viewportHeight = typeof window !== "undefined" ? window.innerHeight : 800;
+  // Calculate image display dimensions using "cover" logic:
+  // The image must fill the entire viewport — no gaps on any side.
+  // On desktop (wide screen): width = viewport width, height scales up (vertical pan).
+  // On mobile (tall screen): height = viewport height, width scales up (horizontal pan).
+  const vw = typeof window !== "undefined" ? window.innerWidth : 1200;
+  const vh = typeof window !== "undefined" ? window.innerHeight : 800;
   const aspectRatio = imageSize
     ? imageSize.width / imageSize.height
     : 16 / 9;
-  const imgDisplayWidth = viewportHeight * aspectRatio;
+
+  // Pick the dimension that makes the image fully cover the viewport
+  const widthFromHeight = vh * aspectRatio;
+  const heightFromWidth = vw / aspectRatio;
+
+  const imgDisplayWidth = Math.max(vw, widthFromHeight);
+  const imgDisplayHeight = Math.max(vh, heightFromWidth);
 
   return (
     <section
@@ -74,9 +81,9 @@ export function InteractiveHero({
         initialScale={1}
         minScale={1}
         maxScale={5}
-        // Center the image horizontally on load
-        initialPositionX={-(imgDisplayWidth - (typeof window !== "undefined" ? window.innerWidth : 1200)) / 2}
-        initialPositionY={0}
+        // Center the image on load
+        initialPositionX={-(imgDisplayWidth - vw) / 2}
+        initialPositionY={-(imgDisplayHeight - vh) / 2}
         limitToBounds={true}
         centerZoomedOut={false}
         smooth={true}
@@ -96,14 +103,14 @@ export function InteractiveHero({
               }}
               contentStyle={{
                 width: imgDisplayWidth,
-                height: "100vh",
+                height: imgDisplayHeight,
               }}
             >
               <img
                 src={imageSrc}
                 alt={imageAlt}
-                style={{ width: imgDisplayWidth, height: "100vh" }}
-                className="block object-fill pointer-events-none select-none"
+                style={{ width: imgDisplayWidth, height: imgDisplayHeight }}
+                className="block object-cover pointer-events-none select-none"
                 draggable={false}
               />
             </TransformComponent>

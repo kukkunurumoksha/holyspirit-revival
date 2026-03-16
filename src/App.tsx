@@ -7,6 +7,7 @@ import { Layout } from "@/components/layout/Layout";
 import Home from "./pages/Home";
 import TheStory from "./pages/TheStory";
 import Pastors from "./pages/Pastors";
+import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/the-story" element={<TheStory />} />
             <Route path="/pastors" element={<Pastors />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
