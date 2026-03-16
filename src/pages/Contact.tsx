@@ -1,17 +1,30 @@
-import { useEffect } from "react";
 import { SectionHeader } from "@/components/revival";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { PrayerRequestForm } from "@/components/contact/PrayerRequestForm";
 import { church } from "@/data/church";
 import { MapPin, Phone, Mail, Youtube, Instagram, Facebook } from "lucide-react";
+import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://electroniccityrevival.com/" },
+    { "@type": "ListItem", position: 2, name: "Contact", item: "https://electroniccityrevival.com/contact" },
+  ],
+};
 
 const Contact = () => {
-  useEffect(() => {
-    document.title = "Contact — 100 Days of Revival";
-  }, []);
-
   return (
     <div className="pt-24">
+      <PageMeta
+        title="Contact"
+        description="Get in touch with Hope in Jesus Church, Electronic City, Bangalore. Send a message, submit a prayer request, or connect with us."
+        path="/contact"
+      />
+      <JsonLd data={breadcrumb} />
+
       {/* Contact section */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
@@ -65,6 +78,7 @@ const Contact = () => {
                     href={church.socials.youtube}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="YouTube"
                     className="rounded-full bg-muted p-2.5 text-muted-foreground transition-colors hover:bg-gold/10 hover:text-gold"
                   >
                     <Youtube className="h-5 w-5" />
@@ -73,6 +87,7 @@ const Contact = () => {
                     href={church.socials.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Instagram"
                     className="rounded-full bg-muted p-2.5 text-muted-foreground transition-colors hover:bg-gold/10 hover:text-gold"
                   >
                     <Instagram className="h-5 w-5" />
@@ -81,6 +96,7 @@ const Contact = () => {
                     href={church.socials.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Facebook"
                     className="rounded-full bg-muted p-2.5 text-muted-foreground transition-colors hover:bg-gold/10 hover:text-gold"
                   >
                     <Facebook className="h-5 w-5" />

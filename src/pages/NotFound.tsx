@@ -1,18 +1,24 @@
-import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
+import { PageMeta } from "@/components/seo/PageMeta";
 
 const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = "Page Not Found — 100 Days of Revival";
     console.error("404: User attempted to access:", location.pathname);
   }, [location.pathname]);
 
   return (
     <div className="flex min-h-screen items-center justify-center section-dark bg-navy">
+      <PageMeta
+        title="Page Not Found"
+        description="The page you're looking for doesn't exist."
+        path={location.pathname}
+        noindex
+      />
       <div className="text-center px-6">
         <p className="font-serif text-display font-bold text-gold">404</p>
         <h1 className="mt-4 font-serif text-h2 font-bold text-cream">

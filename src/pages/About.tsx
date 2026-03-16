@@ -1,19 +1,32 @@
-import { useEffect } from "react";
 import { PhotoHero, SectionHeader, PastorCard, ScriptureRibbon } from "@/components/revival";
 import { church } from "@/data/church";
 import { pastors } from "@/data/pastors";
 import { scriptures } from "@/data/scriptures";
 import { MapPin, Clock, Globe } from "lucide-react";
+import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 const seniorPastor = pastors.find((p) => p.id === "anish-mano-stephen")!;
 
-const About = () => {
-  useEffect(() => {
-    document.title = "About — Hope in Jesus Apostolic Church of Christ";
-  }, []);
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://electroniccityrevival.com/" },
+    { "@type": "ListItem", position: 2, name: "About", item: "https://electroniccityrevival.com/about" },
+  ],
+};
 
+const About = () => {
   return (
     <div>
+      <PageMeta
+        title="About"
+        description="Hope in Jesus Apostolic Church of Christ, Electronic City, Bangalore — the home of the 100 Days of Holy Spirit Revival."
+        path="/about"
+      />
+      <JsonLd data={breadcrumb} />
+
       <PhotoHero
         imageSrc="/images/revival/church-hall/packed-full-hall.webp"
         imageAlt="Packed church hall"
@@ -106,7 +119,6 @@ const About = () => {
           <p className="font-sans text-body text-muted-foreground">
             {church.address}
           </p>
-          {/* TODO: Add Google Maps embed */}
         </div>
       </section>
 

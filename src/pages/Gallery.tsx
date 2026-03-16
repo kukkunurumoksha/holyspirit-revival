@@ -1,7 +1,9 @@
-import { useEffect, useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { PhotoHero } from "@/components/revival";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 const galleryImages = import.meta.glob<string>(
   "/public/images/revival/gallery-optimized/*.webp",
@@ -13,33 +15,38 @@ const images = Object.keys(galleryImages)
   .map((key) => key.replace("/public", ""))
   .sort();
 
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://electroniccityrevival.com/" },
+    { "@type": "ListItem", position: 2, name: "Gallery", item: "https://electroniccityrevival.com/gallery" },
+  ],
+};
+
+const imageGallerySchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  name: "100 Days of Holy Spirit Revival — Gallery",
+  description: "Photos from the 100 Days of Holy Spirit Revival at Hope in Jesus Church, Electronic City, Bangalore.",
+  image: images.slice(0, 20).map((src) => ({
+    "@type": "ImageObject",
+    contentUrl: `https://electroniccityrevival.com${src}`,
+  })),
+};
+
 const Gallery = () => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
+  // Lock body scroll when lightbox is open
   useEffect(() => {
-    document.title = "Gallery — 100 Days of Revival";
-  }, []);
-
-  // Keyboard navigation for lightbox
-  useEffect(() => {
-    if (lightboxIndex === null) return;
-
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setLightboxIndex(null);
-      if (e.key === "ArrowRight")
-        setLightboxIndex((i) => (i !== null ? (i + 1) % images.length : null));
-      if (e.key === "ArrowLeft")
-        setLightboxIndex((i) =>
-          i !== null ? (i - 1 + images.length) % images.length : null
-        );
-    };
-
-    // Prevent body scroll when lightbox is open
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKey);
+    if (lightboxIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
     return () => {
       document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleKey);
     };
   }, [lightboxIndex]);
 
@@ -47,8 +54,34 @@ const Gallery = () => {
     setLightboxIndex(index);
   }, []);
 
+  const closeLightbox = useCallback(() => {
+    setLightboxIndex(null);
+  }, []);
+
+  // Keyboard handler via onKeyDown on the lightbox div
+  const handleKey = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight")
+        setLightboxIndex((i) => (i !== null ? (i + 1) % images.length : null));
+      if (e.key === "ArrowLeft")
+        setLightboxIndex((i) =>
+          i !== null ? (i - 1 + images.length) % images.length : null
+        );
+    },
+    [closeLightbox]
+  );
+
   return (
     <div>
+      <PageMeta
+        title="Gallery"
+        description={`${images.length}+ photos from the 100 Days of Holy Spirit Revival at Hope in Jesus Church, Electronic City, Bangalore.`}
+        path="/gallery"
+      />
+      <JsonLd data={breadcrumb} />
+      <JsonLd data={imageGallerySchema} />
+
       <PhotoHero
         imageSrc="/images/revival/church-hall/packed-worship-01.webp"
         imageAlt="Packed worship during revival"
@@ -87,11 +120,14 @@ const Gallery = () => {
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/95"
-          onClick={() => setLightboxIndex(null)}
+          onClick={closeLightbox}
+          onKeyDown={handleKey}
+          tabIndex={0}
+          ref={(el) => el?.focus()}
         >
           {/* Close */}
           <button
-            onClick={() => setLightboxIndex(null)}
+            onClick={closeLightbox}
             className="absolute top-4 right-4 z-50 rounded-full bg-white/10 p-2 text-white backdrop-blur-sm transition-colors hover:bg-white/20"
             aria-label="Close"
           >

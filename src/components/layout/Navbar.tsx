@@ -20,6 +20,7 @@ export function Navbar() {
   return (
     <>
       <nav
+        aria-label="Main navigation"
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
@@ -41,6 +42,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 to={link.href}
+                aria-current={location.pathname === link.href ? "page" : undefined}
                 className={cn(
                   "font-sans text-sm font-medium transition-colors hover:text-gold",
                   location.pathname === link.href

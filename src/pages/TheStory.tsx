@@ -1,8 +1,18 @@
-import { useEffect } from "react";
 import { PhotoHero, ScriptureRibbon } from "@/components/revival";
 import { StoryNav } from "@/components/story/StoryNav";
 import { StorySection } from "@/components/story/StorySection";
 import { scriptures } from "@/data/scriptures";
+import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://electroniccityrevival.com/" },
+    { "@type": "ListItem", position: 2, name: "The Story", item: "https://electroniccityrevival.com/the-story" },
+  ],
+};
 
 const storySections = [
   { id: "prophecy", label: "I. Prophecy" },
@@ -18,12 +28,15 @@ const storySections = [
 ];
 
 const TheStory = () => {
-  useEffect(() => {
-    document.title = "The Story — 100 Days of Revival";
-  }, []);
-
   return (
     <div>
+      <PageMeta
+        title="The Story"
+        description="The full story of the 100 Days of Holy Spirit Revival — from a 21-day fast to 100 days of nonstop revival at Hope in Jesus Church, Electronic City, Bangalore."
+        path="/the-story"
+      />
+      <JsonLd data={breadcrumb} />
+
       <PhotoHero
         imageSrc="/images/revival/church-hall/packed-worship-01.webp"
         imageAlt="Packed church hall worship"

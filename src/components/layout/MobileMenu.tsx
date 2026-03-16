@@ -30,6 +30,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               key={link.href}
               to={link.href}
               onClick={() => onOpenChange(false)}
+              aria-current={location.pathname === link.href ? "page" : undefined}
               className={cn(
                 "rounded-md px-4 py-3 font-sans text-base font-medium transition-colors",
                 location.pathname === link.href

@@ -1,17 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { PhotoHero, PastorCard } from "@/components/revival";
 import { PastorProfile } from "@/components/pastors/PastorProfile";
 import { pastors, type Pastor } from "@/data/pastors";
+import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://electroniccityrevival.com/" },
+    { "@type": "ListItem", position: 2, name: "Pastors & Ministers", item: "https://electroniccityrevival.com/pastors" },
+  ],
+};
 
 const Pastors = () => {
   const [selected, setSelected] = useState<Pastor | null>(null);
 
-  useEffect(() => {
-    document.title = "Pastors & Ministers — 100 Days of Revival";
-  }, []);
-
   return (
     <div>
+      <PageMeta
+        title="Pastors & Ministers"
+        description="Meet the pastors and ministers who led the 100 Days of Holy Spirit Revival at Hope in Jesus Church, Electronic City, Bangalore."
+        path="/pastors"
+      />
+      <JsonLd data={breadcrumb} />
+
       <PhotoHero
         imageSrc="/images/revival/convention/large-venue-crowd-worship.webp"
         imageAlt="Worship at large venue"

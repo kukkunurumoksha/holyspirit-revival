@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Youtube, Instagram, Facebook } from "lucide-react";
-import { navLinks } from "@/data/navigation";
+import { navLinks, footerExtraLinks } from "@/data/navigation";
 import { church } from "@/data/church";
 
 export function Footer() {
@@ -30,8 +30,8 @@ export function Footer() {
             <h4 className="font-sans text-sm font-semibold uppercase tracking-wider text-gold">
               Quick Links
             </h4>
-            <nav className="mt-4 flex flex-col gap-2">
-              {navLinks.map((link) => (
+            <nav aria-label="Footer navigation" className="mt-4 flex flex-col gap-2">
+              {[...navLinks, ...footerExtraLinks].map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
@@ -53,6 +53,7 @@ export function Footer() {
                 href={church.socials.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="YouTube"
                 className="rounded-full bg-white/10 p-2.5 text-cream/70 transition-colors hover:bg-gold/20 hover:text-gold"
               >
                 <Youtube className="h-5 w-5" />
@@ -61,6 +62,7 @@ export function Footer() {
                 href={church.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
                 className="rounded-full bg-white/10 p-2.5 text-cream/70 transition-colors hover:bg-gold/20 hover:text-gold"
               >
                 <Instagram className="h-5 w-5" />
@@ -69,6 +71,7 @@ export function Footer() {
                 href={church.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Facebook"
                 className="rounded-full bg-white/10 p-2.5 text-cream/70 transition-colors hover:bg-gold/20 hover:text-gold"
               >
                 <Facebook className="h-5 w-5" />

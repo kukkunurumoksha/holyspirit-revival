@@ -1,15 +1,20 @@
 {
   "name": "100 Days of Holy Spirit Revival",
   "short_name": "Revival",
-  "description": "A transformative spiritual journey of prayer, worship, and revival",
+  "description": "100 Days of Holy Spirit Revival at Hope in Jesus Church, Electronic City, Bangalore",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#9b87f5",
+  "background_color": "#FAF8F5",
+  "theme_color": "#d39e22",
   "icons": [
     {
-      "src": "/favicon.png",
-      "sizes": "any",
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

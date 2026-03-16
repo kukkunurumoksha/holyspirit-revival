@@ -9,3 +9,8 @@ export const navLinks: NavLink[] = [
   { label: "Pastors", href: "/pastors" },
   { label: "Gallery", href: "/gallery" },
 ];
+
+export const footerExtraLinks: NavLink[] = [
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];

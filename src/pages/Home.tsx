@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { InteractiveHero, ScriptureRibbon, SectionHeader } from "@/components/revival";
@@ -7,14 +6,46 @@ import { TestimonyCarousel } from "@/components/home/TestimonyCarousel";
 import { TimelinePreview } from "@/components/home/TimelinePreview";
 import { PastorsGrid } from "@/components/home/PastorsGrid";
 import { scriptures } from "@/data/scriptures";
+import { PageMeta } from "@/components/seo/PageMeta";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "100 Days of Holy Spirit Revival",
+  startDate: "2024-04-18",
+  endDate: "2024-07-26",
+  eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+  eventStatus: "https://schema.org/EventScheduled",
+  location: {
+    "@type": "Place",
+    name: "Hope in Jesus Apostolic Church of Christ",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Electronic City, Bangalore",
+      addressRegion: "Karnataka",
+      addressCountry: "IN",
+    },
+  },
+  organizer: {
+    "@type": "Organization",
+    name: "Hope in Jesus Apostolic Church of Christ",
+    url: "https://electroniccityrevival.com",
+  },
+  description:
+    "100 days of continuous Holy Spirit revival at Hope in Jesus Church, Electronic City, Bangalore. April 18 – July 26, 2024. 25+ nations, millions worldwide.",
+};
 
 const Home = () => {
-  useEffect(() => {
-    document.title = "100 Days of Holy Spirit Revival";
-  }, []);
-
   return (
     <div>
+      <PageMeta
+        title="100 Days of Holy Spirit Revival | Electronic City, Bangalore"
+        description="100 Days of Holy Spirit Revival at Hope in Jesus Church, Electronic City, Bangalore. April 18 – July 26, 2024. 25+ nations, millions worldwide — a sovereign move of the Holy Spirit."
+        path="/"
+      />
+      <JsonLd data={eventSchema} />
+
       <InteractiveHero
         imageSrc="/images/revival/church-hall/packed-family-crowd.webp"
         imageAlt="Packed church hall with families during revival"
