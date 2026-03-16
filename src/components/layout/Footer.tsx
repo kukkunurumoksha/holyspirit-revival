@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Youtube, Instagram, Facebook } from "lucide-react";
-import { navLinks, footerExtraLinks } from "@/data/navigation";
+import { navLinks } from "@/data/navigation";
 import { church } from "@/data/church";
 
 export function Footer() {
@@ -31,7 +31,7 @@ export function Footer() {
               Quick Links
             </h4>
             <nav aria-label="Footer navigation" className="mt-4 flex flex-col gap-2">
-              {[...navLinks, ...footerExtraLinks].map((link) => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
