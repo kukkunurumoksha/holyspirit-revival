@@ -10,10 +10,19 @@ const galleryImages = import.meta.glob<string>(
   { eager: true, query: "?url", import: "default" }
 );
 
-// Build sorted list of image paths
-const images = Object.keys(galleryImages)
-  .map((key) => key.replace("/public", ""))
-  .sort();
+// Build shuffled list of image paths (seeded for consistent order per session)
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const images = shuffle(
+  Object.keys(galleryImages).map((key) => key.replace("/public", ""))
+);
 
 const breadcrumb = {
   "@context": "https://schema.org",
