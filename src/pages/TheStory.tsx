@@ -68,10 +68,10 @@ const TheStory = () => {
         imageSrc="/images/revival/church-hall/packed-sermon-listening.webp"
         imageAlt="Congregation listening to sermon during revival"
         images={[
-          { src: "/images/revival/church-hall/beginning-01.jpeg", alt: "Fasting prayer at Hope in Jesus Church" },
-          { src: "/images/revival/church-hall/beginning-02.jpeg", alt: "Worship during the 21-day fast" },
-          { src: "/images/revival/church-hall/beginning-03.jpeg", alt: "Congregation at the beginning of revival" },
-          { src: "/images/revival/church-hall/beginning-04.jpeg", alt: "Revival breaks out in Electronic City" },
+          { src: "/images/revival/church-hall/beginning-01.webp", alt: "Fasting prayer at Hope in Jesus Church" },
+          { src: "/images/revival/church-hall/beginning-02.webp", alt: "Worship during the 21-day fast" },
+          { src: "/images/revival/church-hall/beginning-03.webp", alt: "Congregation at the beginning of revival" },
+          { src: "/images/revival/church-hall/beginning-04.webp", alt: "Revival breaks out in Electronic City" },
         ]}
         paragraphs={[
           "The church in Electronic City, Bangalore was on its 18th day of a 21-day fasting prayer. During these penultimate days of sobriety at Hope in Jesus Church, Pastor Raison Thomas delivered a message from John 7:37. Just as Jesus did on the last and greatest day of the festival, the Pastor cried out: 'Let anyone who is thirsty come to Me and drink.' That single question — 'Are you thirsty?' — rapidly changed the entire spiritual atmosphere of the church.",
@@ -99,8 +99,8 @@ const TheStory = () => {
         imageSrc="/images/revival/convention/large-venue-flags.webp"
         imageAlt="Speaker addressing packed crowd during impartation service"
         images={[
-          { src: "/images/revival/convention/impartation-01.jpeg", alt: "Leaders' impartation service" },
-          { src: "/images/revival/convention/impartation-02.jpeg", alt: "Impartation gathering crowd" },
+          { src: "/images/revival/convention/impartation-01.webp", alt: "Leaders' impartation service" },
+          { src: "/images/revival/convention/impartation-02.webp", alt: "Impartation gathering crowd" },
         ]}
         paragraphs={[
           "As the revival grew and the number of attendees increased, a two-day leaders' meeting and impartation service was organized under the guidance of the Holy Spirit. More than 2,000 people attended this gathering, including around 1,000–2,000 pastors and believers from different places.",
@@ -128,10 +128,10 @@ const TheStory = () => {
         imageSrc="/images/revival/stage/holy-spirit-revival-stage-crowd.webp"
         imageAlt="Worship with keyboard during packed revival service"
         images={[
-          { src: "/images/revival/new-delhi/new-delhi-01.jpeg", alt: "Revival gathering in New Delhi" },
-          { src: "/images/revival/new-delhi/new-delhi-02.jpeg", alt: "Worship at New Delhi impartation service" },
-          { src: "/images/revival/new-delhi/new-delhi-03.jpeg", alt: "Crowds at New Delhi revival" },
-          { src: "/images/revival/new-delhi/new-delhi-04.jpeg", alt: "New Delhi 75th day celebration" },
+          { src: "/images/revival/new-delhi/new-delhi-01.webp", alt: "Revival gathering in New Delhi" },
+          { src: "/images/revival/new-delhi/new-delhi-02.webp", alt: "Worship at New Delhi impartation service" },
+          { src: "/images/revival/new-delhi/new-delhi-03.webp", alt: "Crowds at New Delhi revival" },
+          { src: "/images/revival/new-delhi/new-delhi-04.webp", alt: "New Delhi 75th day celebration" },
         ]}
         videoId="9BNYwXz9yRE"
         paragraphs={[
@@ -153,12 +153,12 @@ const TheStory = () => {
         title="V. Indonesia — July 6, 2024"
         dark
         images={[
-          { src: "/images/revival/indonesia/indonesia-01.jpeg", alt: "Revival worship in Indonesia" },
-          { src: "/images/revival/indonesia/indonesia-02.jpeg", alt: "Believers gathered in Indonesia" },
-          { src: "/images/revival/indonesia/indonesia-03.jpeg", alt: "Indonesia revival meeting" },
-          { src: "/images/revival/indonesia/indonesia-04.jpeg", alt: "Prayer and worship in Indonesia" },
-          { src: "/images/revival/indonesia/indonesia-05.jpeg", alt: "Indonesia revival crowd" },
-          { src: "/images/revival/indonesia/indonesia-06.jpeg", alt: "Holy Spirit move in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-01.webp", alt: "Revival worship in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-02.webp", alt: "Believers gathered in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-03.webp", alt: "Indonesia revival meeting" },
+          { src: "/images/revival/indonesia/indonesia-04.webp", alt: "Prayer and worship in Indonesia" },
+          { src: "/images/revival/indonesia/indonesia-05.webp", alt: "Indonesia revival crowd" },
+          { src: "/images/revival/indonesia/indonesia-06.webp", alt: "Holy Spirit move in Indonesia" },
         ]}
         paragraphs={[
           "Just days after the New Delhi gathering, the revival fire spread to Indonesia on July 6, 2024. The movement continued to expand beyond India's borders, demonstrating that this was truly a global move of the Holy Spirit.",
@@ -175,8 +175,8 @@ const TheStory = () => {
         id="100th-day"
         title="VI. 100th Day — July 26-28, 2024 — United Kingdom — Celebration & Thanksgiving"
         images={[
-          { src: "/images/revival/uk/uk-01.jpeg", alt: "100th day celebration in the United Kingdom" },
-          { src: "/images/revival/uk/uk-02.jpeg", alt: "Revival thanksgiving gathering in the UK" },
+          { src: "/images/revival/uk/uk-01.webp", alt: "100th day celebration in the United Kingdom" },
+          { src: "/images/revival/uk/uk-02.webp", alt: "Revival thanksgiving gathering in the UK" },
         ]}
         paragraphs={[
           "After 100 days of revival meetings, a special thanksgiving and celebration was held in the United Kingdom. It is estimated that 20,000–25,000 people attended in person over the 100 days in Bangalore, while millions around the world watched through live streaming and social media. Testimonies of healing, deliverance, salvation, and life transformation were shared.",
@@ -197,8 +197,8 @@ const TheStory = () => {
         title="VII. Ireland — August 2-4, 2024"
         dark
         images={[
-          { src: "/images/revival/ireland/ireland-01.jpeg", alt: "Revival gathering in Ireland" },
-          { src: "/images/revival/ireland/ireland-02.jpeg", alt: "Worship and prayer in Ireland" },
+          { src: "/images/revival/ireland/ireland-01.webp", alt: "Revival gathering in Ireland" },
+          { src: "/images/revival/ireland/ireland-02.webp", alt: "Worship and prayer in Ireland" },
         ]}
         paragraphs={[
           "Following the powerful 100th day celebration in the UK, the revival continued to Ireland from August 2-4, 2024. The fire of the Holy Spirit that began in Electronic City, Bangalore was now burning across Europe, touching hearts and transforming lives.",
@@ -210,7 +210,7 @@ const TheStory = () => {
         id="uganda"
         title="VIII. Uganda — January 30, 2025"
         images={[
-          { src: "/images/revival/uganda/uganda-01.jpeg", alt: "Revival in Uganda" },
+          { src: "/images/revival/uganda/uganda-01.webp", alt: "Revival in Uganda" },
         ]}
         paragraphs={[
           "The revival fire continues to spread to Africa, with a planned gathering in Uganda on January 30, 2025. This marks the expansion of the Holy Spirit Revival to the African continent, demonstrating that the movement truly spans the globe.",
