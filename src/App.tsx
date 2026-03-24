@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import TheStory from "./pages/TheStory";
 import Pastors from "./pages/Pastors";
 import Gallery from "./pages/Gallery";
+import Videos from "./pages/Videos";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/the-story" element={<TheStory />} />
             <Route path="/pastors" element={<Pastors />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/videos" element={<Videos />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Route>

@@ -8,6 +8,7 @@ export const navLinks: NavLink[] = [
   { label: "The Story", href: "/the-story" },
   { label: "Pastors", href: "/pastors" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Videos", href: "/videos" },
 ];
 
 export const footerExtraLinks: NavLink[] = [

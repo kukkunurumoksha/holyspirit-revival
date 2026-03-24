@@ -51,6 +51,72 @@ const TheStory = () => {
 
       <StoryNav sections={storySections} />
 
+      {/* Revival Overview Banner */}
+      <section className="relative overflow-hidden bg-navy section-dark py-16 md:py-24">
+        {/* Decorative background glow */}
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-gold/10 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-fire/10 blur-3xl" />
+        </div>
+
+        <div className="relative mx-auto max-w-4xl px-6">
+          {/* Label */}
+          <div className="mb-6 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gold/30" />
+            <span className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+              April 18 – July 26, 2024 &bull; Electronic City, Bangalore
+            </span>
+            <div className="h-px flex-1 bg-gold/30" />
+          </div>
+
+          {/* Heading */}
+          <h2 className="font-serif text-3xl font-bold leading-snug text-foreground md:text-4xl lg:text-5xl">
+            Overview of the 100 Days of Revival
+          </h2>
+          <div className="mt-3 h-1 w-16 rounded-full bg-gold" />
+
+          <p className="mt-8 font-sans text-lg leading-[1.75] text-muted-foreground">
+            It began with a prophecy. On April 16, 2024, Pastor T. Jijo Thomas declared that a great revival would break out in Electronic City, Bangalore — and two days later, that word came to pass.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            On the 18th day of a 21-day fasting prayer at Hope in Jesus Church, Pastor Raison Thomas ministered from John 7:37. One question — <span className="italic text-gold">"Are you thirsty?"</span> — shifted everything. Worship flowed, prayer deepened, and meetings continued uninterrupted, sometimes day and night, for nearly 30 days. No advertising, no invitations — yet thousands came from across India and beyond.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            By May 9–10, a spontaneous leaders' gathering drew 2,000+ people including 1,000+ pastors — none formally invited. The meetings were live streamed continuously, reaching 2.8 million viewers from 53 nations. On the 75th day, a mega impartation service was held in New Delhi. Days later, the fire crossed to Indonesia, then the United Kingdom on the 100th day, followed by Ireland, and eventually Uganda in January 2025.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            Across 100 days, over 20,000 people attended in person, testimonies of healing and transformation poured in, and people from 25+ nations visited physically. Zero conflicts among pastors throughout. What began as one question in a small prayer gathering had become a global move of God — and those who witnessed it say this is only the beginning.
+          </p>
+
+          {/* Stats row */}
+          <div className="mt-[40px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { number: "100", label: "Days of Revival" },
+              { number: "2.8M+", label: "Online Viewers" },
+              { number: "25+", label: "Nations Visited" },
+              { number: "53", label: "Countries Online" },
+            ].map(({ number, label }) => (
+              <div key={label} className="rounded-lg border border-gold/20 bg-white/5 px-4 py-5 text-center backdrop-blur-sm">
+                <div className="font-serif text-3xl font-bold text-gold">{number}</div>
+                <div className="mt-1 font-sans text-xs text-muted-foreground">{label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom divider */}
+          <div className="mt-12 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gold/20" />
+            <span className="font-sans text-xs italic text-muted-foreground">
+              "This fire will not stop until Lord Jesus Christ comes back."
+            </span>
+            <div className="h-px flex-1 bg-gold/20" />
+          </div>
+        </div>
+      </section>
+
       <StorySection
         id="prophecy"
         title="I. Prophetic Confirmation — April 16, 2024"
@@ -58,7 +124,6 @@ const TheStory = () => {
           "Before the revival began, Pastor T. Jijo Thomas prophesied that a great revival would take place in Karnataka, specifically in Electronic City, Bangalore. He declared that there would be a powerful move of God and a glory encounter in this region.",
           "This prophetic word set the stage for what was about to unfold—a sovereign move of the Holy Spirit that would touch India and the nations.",
         ]}
-        videoSrc="/videos/prophecy.mp4"
         quotes={[
           {
             quote:
@@ -146,7 +211,6 @@ const TheStory = () => {
           { src: "/images/revival/new-delhi/new-delhi-03.webp", alt: "Crowds at New Delhi revival" },
           { src: "/images/revival/new-delhi/new-delhi-04.webp", alt: "New Delhi 75th day celebration" },
         ]}
-        videoId="9BNYwXz9yRE"
         paragraphs={[
           "The revival meetings were live streamed continuously for 75 days without interruption, reaching around 2.5–2.8 million viewers worldwide. By this time, the revival had touched thousands of people physically and millions online. The revival grew organically into 24/7 nonstop meetings with no advertising or formal invitations—people simply came, drawn by something beyond human effort.",
           "To continue spreading the revival, a mega impartation service was held in New Delhi to commemorate the 75th day of the revival and to ignite revival across India and the nations. Throughout the revival, weekly sessions focused on various spiritual topics, including inner healing, the fruits and gifts of the Holy Spirit, the ministry of the Holy Spirit, and the impartation of God's glory. Many participants testified that they received the gift of speaking in tongues for the first time. The revival gained international attention, including support from representatives connected to the Catch the Fire movement in Toronto.",
@@ -286,7 +350,6 @@ const TheStory = () => {
         id="five-fold"
         title="The Future — Until He Returns"
         dark
-        videoId="H6tu2Ch_kKg"
         paragraphs={[
           "One of the most remarkable aspects of the 100 Days of Revival was the full participation of the five-fold ministry—pastors, evangelists, teachers, prophets, and apostles all took part. Denominations and language barriers fell away in the presence of the Spirit. From north India to the south, from Delhi to Kerala, from Indonesia to Dubai, from the UK to Ireland, from the USA to Canada, and to Uganda—ministers of every calling came together in a unity that only the Holy Spirit could orchestrate.",
           "Many leaders described the revival as a foretaste of a greater end-time revival that God will bring to India and the nations. The revival emphasizes that this movement is not limited to a single church, denomination, or location, but is intended to spread across India and around the world until the return of Jesus Christ.",
