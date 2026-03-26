@@ -21,13 +21,60 @@ const videoSections = [
     ],
   },
   {
+    id: "beginning",
+    title: "The Beginning",
+    subtitle: "How it all started — Holy Spirit Revival, Electronic City 2024",
+    videos: [
+      { type: "youtube" as const, id: "8eKvUki-hw0", title: "HOW IT ALL STARTED? | Holy Spirit Revival, Electronic City 2024 | Episode 1" },
+      { type: "youtube" as const, id: "IUt9JF9Bb4g", title: "REWIND | HOW IT ALL STARTED? | Holy Spirit Revival, Electronic City 2024 | Episode 2" },
+      { type: "youtube" as const, id: "A-BbT90j6JU", title: "REWIND | HOW IT ALL STARTED? | Holy Spirit Revival, Electronic City 2024 | Episode 3" },
+      { type: "youtube" as const, id: "4PHZ71nOoEk", title: "REWIND | HOW IT ALL STARTED? | Holy Spirit Revival, Electronic City 2024 | Episode 4" },
+      { type: "youtube" as const, id: "OOvd9a3tKb8", title: "REWIND | HOW IT ALL STARTED? | Holy Spirit Revival, Electronic City 2024 | Episode 5" },
+    ],
+  },
+  {
+    id: "impartation",
+    title: "Impartation Service",
+    subtitle: "Holy Spirit Revival Impartation Conference — Bangalore",
+    videos: [
+      { type: "youtube" as const, id: "ZnRANxNLILQ", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 1" },
+      { type: "youtube" as const, id: "OfFu60ez-GU", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 2" },
+      { type: "youtube" as const, id: "j82AOpJDhfo", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 3" },
+      { type: "youtube" as const, id: "JYyTkdmY41A", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 4" },
+      { type: "youtube" as const, id: "UrIpkIwmXI4", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 5" },
+      { type: "youtube" as const, id: "NpffoJtihJ0", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 6" },
+      { type: "youtube" as const, id: "AqKP1KQVu2w", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 7" },
+      { type: "youtube" as const, id: "Zz01pEu5rx0", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 8" },
+      { type: "youtube" as const, id: "BzAtFl0ua2E", title: "Holy Spirit Revival Impartation Conference Bangalore | Part 9" },
+    ],
+  },
+  {
     id: "revival-highlights",
     title: "Revival Highlights",
-    subtitle: "Key moments from the 100 Days of Holy Spirit Revival",
+    subtitle: "Overview videos from the 100 Days of Holy Spirit Revival",
     videos: [
       { type: "youtube" as const, id: "WkziRXKraFE", title: "50 Days of Holy Spirit Revival" },
-      { type: "youtube" as const, id: "9BNYwXz9yRE", title: "75th Day — New Delhi Impartation Service" },
+      { type: "youtube" as const, id: "9BNYwXz9yRE", title: "75 Days of Holy Spirit Revival" },
       { type: "youtube" as const, id: "H6tu2Ch_kKg", title: "100 Days of Holy Spirit Revival" },
+    ],
+  },
+  {
+    id: "new-delhi",
+    title: "New Delhi — 75th Day",
+    subtitle: "Mega Impartation Service · July 1, 2024",
+    videos: [
+      { type: "youtube" as const, id: "sxGv_J9jhVs", title: "Holy Spirit Revival | Mega Impartation Service — New Delhi | 75th Day Highlights" },
+      { type: "youtube" as const, id: "uoBjzhLaZZg", title: "Holy Spirit Revival | Day 79 | Mega Impartation Session | Part-1" },
+      { type: "youtube" as const, id: "miWEC78eRGI", title: "Holy Spirit Revival | Day 80 | Mega Impartation Session | Part-2" },
+    ],
+  },
+  {
+    id: "uk",
+    title: "United Kingdom — 100th Day Celebration",
+    subtitle: "July 26–28, 2024",
+    videos: [
+      { type: "youtube" as const, id: "54aC6iif36E", title: "Holy Spirit Revival in UK | Pr. Raison Thomas | Pr. Damien Antony | Pr. Finny Stephen | Pr. Anish | Part-1" },
+      { type: "youtube" as const, id: "ykb0GKMdZqU", title: "Holy Spirit Revival in UK | Pr. Raison Thomas | Pr. Damien Antony | Pr. Finny Stephen | Pr. Anish | Part-2" },
     ],
   },
 ];
@@ -76,6 +123,15 @@ const Videos = () => {
                         {video.type === "youtube" ? (
                           <iframe
                             src={`https://www.youtube.com/embed/${video.id}`}
+                            title={video.title}
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="h-full w-full"
+                          />
+                        ) : video.type === "playlist" ? (
+                          <iframe
+                            src={`https://www.youtube.com/embed/videoseries?list=${video.listId}`}
                             title={video.title}
                             loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
