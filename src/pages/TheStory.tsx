@@ -84,6 +84,10 @@ const TheStory = () => {
           </p>
 
           <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            That very night, the young people stayed until midnight — and beyond. What witnesses described as a <span className="italic text-gold font-medium">liquid fire</span> began to fall. New tongues broke out across the room. People began speaking in tongues for the first time, and others received the gift to interpret. Some reported seeing angels. The sick were healed. Hearts that had been hardened or broken were transformed. The presence of God was so thick that people could not leave — and many did not want to.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
             For nearly 30 days, worship, prayer, and ministry continued day and night without interruption — no timetable, no schedule, no advertising. Word spread entirely by the Holy Spirit. People began arriving from across India — from Kerala, Tamil Nadu, Delhi, and beyond. Then from other nations — Canada, the United States, the United Kingdom, Australia. Nobody sent invitations. Nobody organised a campaign. Yet thousands came, drawn by something they could not explain.
           </p>
 
