@@ -76,19 +76,35 @@ const TheStory = () => {
           <div className="mt-3 h-1 w-16 rounded-full bg-gold" />
 
           <p className="mt-8 font-sans text-lg leading-[1.75] text-muted-foreground">
-            It began with a prophecy. On April 16, 2024, Pastor T. Jijo Thomas declared that a great revival would break out in Electronic City, Bangalore — and two days later, that word came to pass.
+            It began with a prophecy. On April 16, 2024, Pastor T. Jijo Thomas stood and declared with conviction that a great revival would break out in Karnataka — specifically in Electronic City, Bangalore. No one could have imagined how quickly that word would come to pass.
           </p>
 
           <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
-            On the 18th day of a 21-day fasting prayer at Hope in Jesus Church, Pastor Raison Thomas ministered from John 7:37. One question — <span className="italic text-gold">"Are you thirsty?"</span> — shifted everything. Worship flowed, prayer deepened, and meetings continued uninterrupted, sometimes day and night, for nearly 30 days. No advertising, no invitations — yet thousands came from across India and beyond.
+            Two days later, on April 18, the church at Hope in Jesus Church was on the 18th day of a 21-day fasting prayer. It was meant to be a quiet, solemn gathering. Pastor Raison Thomas stood to minister from John 7:37 — the passage where Jesus, on the last and greatest day of the feast, cried out to the crowd. The Pastor asked one simple question: <span className="italic text-gold font-medium">"Are you thirsty?"</span> That question broke something open. The spiritual atmosphere of the room shifted instantly. The service moved far beyond its scheduled time. Worship began to flow in a way no one had planned. Prayer deepened. People wept. And from that night, the meetings simply did not stop.
           </p>
 
           <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
-            By May 9–10, a spontaneous leaders' gathering drew 2,000+ people including 1,000+ pastors — none formally invited. The meetings were live streamed continuously, reaching 2.8 million viewers from 53 nations. On the 75th day, a mega impartation service was held in New Delhi. Days later, the fire crossed to Indonesia, then the United Kingdom on the 100th day, followed by Ireland, and eventually Uganda in January 2025.
+            For nearly 30 days, worship, prayer, and ministry continued day and night without interruption — no timetable, no schedule, no advertising. Word spread entirely by the Holy Spirit. People began arriving from across India — from Kerala, Tamil Nadu, Delhi, and beyond. Then from other nations — Canada, the United States, the United Kingdom, Australia. Nobody sent invitations. Nobody organised a campaign. Yet thousands came, drawn by something they could not explain.
           </p>
 
           <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
-            Across 100 days, over 20,000 people attended in person, testimonies of healing and transformation poured in, and people from 25+ nations visited physically. Zero conflicts among pastors throughout. What began as one question in a small prayer gathering had become a global move of God — and those who witnessed it say this is only the beginning.
+            On May 9–10, a leaders' impartation gathering took shape — again, spontaneously. Over 2,000 people attended, including more than 1,000 pastors and 500 frontline ministers from Kerala alone. Not one of them received a formal invitation. In those two days, people experienced inner healing, received spiritual gifts, spoke in tongues for the first time, and were individually prayed for and blessed. Pastor Chandy Varghese, who witnessed it, said simply: <span className="italic">"People come from many places and many countries without anyone inviting them. That is a sign of the revival."</span>
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            The meetings were live streamed continuously — 24 hours a day, without a single break — for 75 days. By July 1, the 75th day, over 2.8 million people from 53 nations had watched online. To mark this milestone, a mega impartation service was held in New Delhi, carrying the revival fire to India's capital. Just five days later, on July 6, the fire crossed international borders as revival gatherings began in Indonesia.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            On July 26–28, 2024 — the 100th day — a special thanksgiving celebration was held in the United Kingdom. Over 20,000–25,000 people had attended in person across the 100 days in Bangalore. In the final days, Karnataka pastors completed 100 hours of nonstop prayer. One of the most extraordinary testimonies of the entire revival: across all 100 days, there were zero conflicts or misunderstandings among pastors — a unity that only the Holy Spirit could produce. The revival then continued to Ireland in August, and by January 2025, the fire had reached Uganda on the African continent.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            Throughout the 100 days, God moved in ways that defied human explanation. Testimonies of physical healing, deliverance from spiritual oppression, restored marriages, and renewed callings poured in daily. Young people — who are often the hardest to reach — wept at altars and stayed through the night in worship. Discouraged pastors who had considered leaving ministry returned with fresh fire. New ministries were born. People from more than 25 nations visited physically. Viewers from over 50 countries watched online. The five-fold ministry — pastors, evangelists, teachers, prophets, and apostles — all participated together, with denominations and language barriers falling away in the presence of the Spirit.
+          </p>
+
+          <p className="mt-5 font-sans text-lg leading-[1.75] text-muted-foreground">
+            What began as one question — <span className="italic text-gold font-medium">"Are you thirsty?"</span> — in a small fasting prayer gathering became a sovereign move of God that touched India and the nations. Every leader who witnessed it said the same thing: this is not the end. This is only the beginning of a greater revival that God will bring to India and the world — until the return of Jesus Christ.
           </p>
 
           {/* Stats row */}
